@@ -2,7 +2,7 @@
 let data = [];
 
 async function loadCSV() {
-  const res = await fetch("data.csv");
+  const res = await fetch("data(2).csv");
   const txt = await res.text();
   const rows = txt.split("\n").map(r => r.split(","));
   const headers = rows.shift();
